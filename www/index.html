@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Cordova App</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1> Simple Cordova App</h1>
+      <p id="status">Connecting...</p>
+
+      <!-- 1. Welcome Message -->
+      <p><strong>Welcome to our App!</strong></p>
+
+      <!-- 2. Greet User -->
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button onclick="app.greetUser()">Say Hello</button>
+      <p id="greetingMessage"></p>
+
+      <!-- 3. Counter -->
+      <p>Button Clicked: <span id="counter">0</span> times</p>
+      <button onclick="app.incrementCounter()">Click Me</button>
+
+      <!-- 4. Toggle Theme -->
+      <button onclick="app.toggleTheme()">Toggle Light/Dark Mode</button>
+
+      <!-- 5. Change Background -->
+      <button onclick="app.changeBackground()">Change Background Color</button>
+
+      <!-- 6. Current Date -->
+      <p><strong>Date:</strong> <span id="date"></span></p>
+
+      <!-- 7. Live Clock -->
+      <p><strong>Time:</strong> <span id="clock"></span></p>
+
+      <!-- 8. Reset -->
+      <button onclick="app.resetAll()">Reset App</button>
+
+      <!-- 9. Random Quote -->
+      <p><strong>Quote of the Moment:</strong></p>
+      <p id="quote"></p>
+      <button onclick="app.showQuote()">New Quote</button>
+
+      <!-- 10. Screen Info -->
+      <p><strong>Screen Size:</strong> <span id="screenSize"></span></p>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
